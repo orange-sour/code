@@ -1,0 +1,32 @@
+@keyframes pb { 0% { width: 0%; } 100% { width: 100%; } }
+@keyframes fade { 0%, 33.32% { opacity: 1; z-index: 10; } 33.33%, 100% { opacity: 0; z-index: 1; } }
+@keyframes fade2 { 0%, 33.32% { opacity: 0; z-index: 1; } 33.33%, 66.65% { opacity: 1; z-index: 10; } 66.66%, 100% { opacity: 0; z-index: 1; } }
+@keyframes fade3 { 0%, 66.65% { opacity: 0; z-index: 1; } 66.66%, 100% { opacity: 1; z-index: 10; } }
+
+.story-container:hover * { animation-play-state: paused !important; }
+input[name="story-tab"]:checked ~ .story-wrapper .story-slide { animation: none !important; }
+
+#tab1:checked ~ .story-wrapper .slide-1 { opacity: 1; z-index: 10; }
+#tab1:checked ~ .story-wrapper .slide-2, #tab1:checked ~ .story-wrapper .slide-3 { opacity: 0; z-index: 1; }
+#tab1:checked ~ .story-wrapper .bar-1 { width: 100% !important; animation: none !important; }
+#tab1:checked ~ .story-wrapper .bar-2, #tab1:checked ~ .story-wrapper .bar-3 { width: 0% !important; animation: none !important; }
+#tab1:checked ~ .story-wrapper .arrow-slide-1 { display: flex !important; }
+
+#tab2:checked ~ .story-wrapper .slide-2 { opacity: 1; z-index: 10; }
+#tab2:checked ~ .story-wrapper .slide-1, #tab2:checked ~ .story-wrapper .slide-3 { opacity: 0; z-index: 1; }
+#tab2:checked ~ .story-wrapper .bar-1 { width: 100% !important; animation: none !important; }
+#tab2:checked ~ .story-wrapper .bar-2 { width: 100% !important; animation: none !important; }
+#tab2:checked ~ .story-wrapper .bar-3 { width: 0% !important; animation: none !important; }
+#tab2:checked ~ .story-wrapper .arrow-slide-2 { display: flex !important; }
+
+#tab3:checked ~ .story-wrapper .slide-3 { opacity: 1; z-index: 10; }
+#tab3:checked ~ .story-wrapper .slide-1, #tab3:checked ~ .story-wrapper .slide-2 { opacity: 0; z-index: 1; }
+#tab3:checked ~ .story-wrapper .bar-1, #tab3:checked ~ .story-wrapper .bar-2, #tab3:checked ~ .story-wrapper .bar-3 { width: 100% !important; animation: none !important; }
+#tab3:checked ~ .story-wrapper .arrow-slide-3 { display: flex !important; }
+
+.bar-1 { animation: pb 15s linear infinite; }
+.bar-2 { animation: pb 5s linear infinite; animation-delay: 5s; width: 0%; }
+.bar-3 { animation: pb 5s linear infinite; animation-delay: 10s; width: 0%; }
+.slide-1 { animation: fade 15s infinite; }
+.slide-2 { animation: fade2 15s infinite; }
+.slide-3 { animation: fade3 15s infinite; }

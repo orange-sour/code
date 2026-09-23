@@ -53,24 +53,27 @@
 
 /* ==========================================================
    LOGIQUE DES ÉTATS (CHANGEMENT DE SLIDE AU CLIC)
+   Basé sur nth-of-type au lieu des #id, pour que plusieurs
+   stories avec des id différents puissent coexister sur la
+   même page.
    ================================================---------- */
-#tab1:checked~.story-wrapper .story-slide{animation:none!important}
-#tab1:checked~.story-wrapper .slide-1{opacity:1;z-index:10}
-#tab1:checked~.story-wrapper .slide-2,#tab1:checked~.story-wrapper .slide-3{opacity:0;z-index:1}
-#tab1:checked~.story-wrapper .bar-1{width:100%!important;animation:none!important}
-#tab1:checked~.story-wrapper .bar-2,#tab1:checked~.story-wrapper .bar-3{width:0%!important;animation:none!important}
-#tab1:checked~.story-wrapper .arrow-slide-1{display:flex!important}
+.story-radio:nth-of-type(1):checked~.story-wrapper .story-slide{animation:none!important}
+.story-radio:nth-of-type(1):checked~.story-wrapper .slide-1{opacity:1;z-index:10}
+.story-radio:nth-of-type(1):checked~.story-wrapper .slide-2,.story-radio:nth-of-type(1):checked~.story-wrapper .slide-3{opacity:0;z-index:1}
+.story-radio:nth-of-type(1):checked~.story-wrapper .bar-1{width:100%!important;animation:none!important}
+.story-radio:nth-of-type(1):checked~.story-wrapper .bar-2,.story-radio:nth-of-type(1):checked~.story-wrapper .bar-3{width:0%!important;animation:none!important}
+.story-radio:nth-of-type(1):checked~.story-wrapper .arrow-slide-1{display:flex!important}
 
-#tab2:checked~.story-wrapper .story-slide{animation:none!important}
-#tab2:checked~.story-wrapper .slide-2{opacity:1;z-index:10}
-#tab2:checked~.story-wrapper .slide-1,#tab2:checked~.story-wrapper .slide-3{opacity:0;z-index:1}
-#tab2:checked~.story-wrapper .bar-1{width:100%!important;animation:none!important}
-#tab2:checked~.story-wrapper .bar-2{width:100%!important;animation:none!important}
-#tab2:checked~.story-wrapper .bar-3{width:0%!important;animation:none!important}
-#tab2:checked~.story-wrapper .arrow-slide-2{display:flex!important}
+.story-radio:nth-of-type(2):checked~.story-wrapper .story-slide{animation:none!important}
+.story-radio:nth-of-type(2):checked~.story-wrapper .slide-2{opacity:1;z-index:10}
+.story-radio:nth-of-type(2):checked~.story-wrapper .slide-1,.story-radio:nth-of-type(2):checked~.story-wrapper .slide-3{opacity:0;z-index:1}
+.story-radio:nth-of-type(2):checked~.story-wrapper .bar-1{width:100%!important;animation:none!important}
+.story-radio:nth-of-type(2):checked~.story-wrapper .bar-2{width:100%!important;animation:none!important}
+.story-radio:nth-of-type(2):checked~.story-wrapper .bar-3{width:0%!important;animation:none!important}
+.story-radio:nth-of-type(2):checked~.story-wrapper .arrow-slide-2{display:flex!important}
 
-#tab3:checked~.story-wrapper .story-slide{animation:none!important}
-#tab3:checked~.story-wrapper .slide-3{opacity:1;z-index:10}
-#tab3:checked~.story-wrapper .slide-1,#tab3:checked~.story-wrapper .slide-2{opacity:0;z-index:1}
-#tab3:checked~.story-wrapper .bar-1,#tab3:checked~.story-wrapper .bar-2,#tab3:checked~.story-wrapper .bar-3{width:100%!important;animation:none!important}
-#tab3:checked~.story-wrapper .arrow-slide-3{display:flex!important}
+.story-radio:nth-of-type(3):checked~.story-wrapper .story-slide{animation:none!important}
+.story-radio:nth-of-type(3):checked~.story-wrapper .slide-3{opacity:1;z-index:10}
+.story-radio:nth-of-type(3):checked~.story-wrapper .slide-1,.story-radio:nth-of-type(3):checked~.story-wrapper .slide-2{opacity:0;z-index:1}
+.story-radio:nth-of-type(3):checked~.story-wrapper .bar-1,.story-radio:nth-of-type(3):checked~.story-wrapper .bar-2,.story-radio:nth-of-type(3):checked~.story-wrapper .bar-3{width:100%!important;animation:none!important}
+.story-radio:nth-of-type(3):checked~.story-wrapper .arrow-slide-3{display:flex!important}

@@ -7,9 +7,7 @@ text-transform:uppercase;text-shadow:1.5px 0 0 var(--gray);font-size:11px!import
 bast_am2 h2 {
 font-weight:400 !important;font-size:16px;!important;text-align:center;
 }
-.img_bast_am2 img{
-width:260px;height:100px;object-fit:cover;display:inline-block;border: solid 1px #bdbdbd;border-radius:1px;padding:3px;opacity:0.8;margin-bottom:0px;
-}
+.img_bast_am2{width:260px;height:100px;object-fit:cover;display:inline-block;border: solid 1px #bdbdbd;border-radius:1px;padding:3px;opacity:0.8;margin-bottom:0px;}
 .quote_bast_am2 {
 font-family:times;font-size:11px;font-style:italic;line-height:11px;width:240px;font-weight:400;letter-spacing:1px;text-align:justify;text-transform:lowercase;margin-top:4px;
 }

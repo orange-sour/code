@@ -63,7 +63,7 @@ rpam_02 .texte::first-letter{
 }
 
 /* couleurs du texte, suivent les variables */
-rpam_02 u1, rpam_02 i1, rpam_02 ig, rpam_02 af, rpam_02 pd{color:var(--color1, #8a5cf6)}
+rpam_02 i1, rpam_02 ig, rpam_02 af, rpam_02 pd{color:var(--color1, #8a5cf6)}
 rpam_02 d{font-weight:600;letter-spacing:0.5px;color:var(--color2, #f65c9a)}
 
 rpam_02 .pseudo{

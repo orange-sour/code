@@ -8,15 +8,6 @@ jude .cur-rp-simple {
     width: 570px;
 }
 
-jude .cur-rp-simple-head figure {
-    width: 78px;
-    height: 78px;
-}
-
-jude .cur-rp-simple-head span {
-    margin-top: -10px;
-}
-
 jude .cur-rp-simple-text > div {
     opacity: .85;
     height: 380px;
@@ -30,7 +21,7 @@ jude d {
     color: var(--fiche-couleur);
     font-weight: 600;
     letter-spacing: .5px;
-    filter: brightness(1.1);
+    filter: brightness(1.2);
     width: 80%;
     display: inline-block;
     font-family: 'PP Neue Montreal Medium', sans-serif;
